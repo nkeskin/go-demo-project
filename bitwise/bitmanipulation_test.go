@@ -1,4 +1,4 @@
-package main
+package bitwise
 
 import (
 	"testing"

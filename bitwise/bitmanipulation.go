@@ -1,4 +1,4 @@
-package main
+package bitwise
 
 func ShiftLeft(num, shiftCnt int) int {
 	return num << shiftCnt
