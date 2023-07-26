@@ -1,4 +1,4 @@
-package bitwise
+package main
 
 import (
 	"testing"
@@ -17,6 +17,25 @@ func TestShiftRight(t *testing.T) {
 	expected := 0
 	if result != expected {
 		t.Errorf("result is : %d , should be : %d", result, expected)
+	}
+}
+
+func TestGetBit(t *testing.T) {
+	num := 16
+	ith := 3
+	result := GetBit(num, ith)
+	if result {
+		t.Errorf("%d th bit of %d is not 1", ith, num)
+	}
+}
+
+func TestSetBit(t *testing.T) {
+	num := 16
+	ith := 3
+	expected := 24
+	result := SetBit(num, ith)
+	if expected != result {
+		t.Errorf("Expected : %d , actual : %d", expected, result)
 	}
 }
 
