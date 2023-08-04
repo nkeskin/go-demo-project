@@ -17,13 +17,13 @@ func isPalindrome2(s string) bool {
 	l := 0
 	r := length - 1
 	for l < r {
-		for !checkValidChar(s[l]) && l < length {
+		for !checkValidChar2(s[l]) && l < length {
 			l++
 			if l >= length {
 				return true
 			}
 		}
-		for !checkValidChar(s[r]) && r > 0 {
+		for !checkValidChar2(s[r]) && r > 0 {
 			r--
 			if r < 0 {
 				return true
@@ -39,7 +39,7 @@ func isPalindrome2(s string) bool {
 	return true
 }
 
-func checkValidChar(c uint8) bool {
+func checkValidChar2(c uint8) bool {
 	if (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') {
 		return true
 	}
