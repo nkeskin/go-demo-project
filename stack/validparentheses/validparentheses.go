@@ -1,4 +1,4 @@
-package stack
+package validparentheses
 
 func isValid(input string) bool {
 	var s Stack
