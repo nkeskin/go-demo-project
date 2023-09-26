@@ -19,6 +19,7 @@ func Test_reverseList(t *testing.T) {
 		15, nil,
 	}
 
+	//
 	reverseList(&linkedList)
 
 	//type args struct {
